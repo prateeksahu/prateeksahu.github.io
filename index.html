@@ -1,22 +1,50 @@
 <html>
 <head>
-<STYLE type="text/css">
+<STYLE type="text/css" media="screen">
 <!--
-A { text-decoration:none }
+body {
+  background-color: gray;
+}
+div#banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #DDEEEE;
+  width: 100%;
+  height: 100px;
+}
+div#banner-content {
+  width: 80px;
+  margin: 10 auto;
+  padding: 0;
+  border: 1px solid #000
+}
+div#main-content {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+}
 -->
 </STYLE>
 <LINK REL=STYLESHEET HREF="style.css" TYPE="text/css">
   <title>Prateek Sahu</title>
-    <img src="Profile.jpeg" alt="Test Image" width=300 ALIGN="left"/>
     <link rel="shortcut icon" href="https://en.wikipedia.org/wiki/File:University_of_Texas_at_Austin_seal.svg">
 <link rel="stylesheet" href="./site.css">
 
 </head>
 <body bgcolor="#ffffff" text="#000000" link="#330099" alink="#000000" vlink="#330099">
+  <div id="banner">
+    <div id="banner-content">
+    This is banner content.
+    </div>
+  </div>
+  <div id="main-content">
 
+    <img src="Profile.jpeg" alt="Profile Picture" width=300 hspace=20 vspace=20 ALIGN="right"/>
 <TABLE BORDER=0>
   <TR>
-    <TD VALIGN=TOP width=500>
+    <TD VALIGN=TOP width=700>
     <font size="+2"><b>Prateek Sahu</b></font><br>
     Second Year Ph.D. Student<br>
       <a href="http://www.ece.utexas.edu/">Department of Electrical and Computer Engineering</a><br>
@@ -36,7 +64,7 @@ prateeks@utexas.edu in case of an availability.
 
 <p>
 <a href="Prateek_Sahu_Resume.pdf">CV</a> | <a href="https://www.linkedin.com/in/sahuprateek/">LinkedIn</a><br><br>
-
+  </div>
 </body>
 </html>
 
