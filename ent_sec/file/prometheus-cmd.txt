@@ -1,0 +1,17 @@
+Demo commands for Prometheus lecture
+
+Enable: microk8s.enable prometheus
+Check: microk8s.kubectl get pods -n monitoring
+
+Port-forward services:
+Prometheus: microk8s.kubectl port-forward -n monitoring prometheus-k8s-0 9090
+Grafana: microk8s.kubectl port-forward -n monitoring (microk8s.kubectl get pods --selector=app=grafana -n monitoring --output=jsonpath="{.items..metadata.name}") 3000
+Grafana alt: microk8s.kubectl port-forward -n monitoring grafana 3000
+Alert Manager: microk8s.kubectl port-forward -n monitoring alertmanager-main-0 9093
+
+Demo commands
+microk8s.kubectl -n monitoring edit service prometheus-k8s
+microk8s.kubectl -n monitoring edit service grafana
+microk8s.kubectl -n monitoring edit service alertmanager-main
+
+Path for service monitor examples: /snap/microk8s/920/actions/prometheus/

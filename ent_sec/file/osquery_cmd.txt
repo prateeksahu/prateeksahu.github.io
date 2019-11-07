@@ -1,0 +1,21 @@
+Install osquery:
+
+export OSQUERY_KEY=1484120AC4E9F8A1A577AEEE97A80C63C9D8B80B
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys $OSQUERY_KEY
+sudo add-apt-repository 'deb [arch=amd64] https://pkg.osquery.io/deb deb main'
+sudo apt-get update
+sudo apt-get install osquery
+
+Demo commands:
+
+docker run -d --name web01 --privileged --user root nginx:latest
+sudo osqueryi
+.tables
+SELECT name, image, status FROM docker_containers WHERE privileged=1;
+SELECT name, env_variables FROM docker_containers WHERE env_variables LIKE "%PASSWORD%";
+
+Kubernetes:
+
+SELECT pid FROM processes WHERE name LIKE "%sql%";
+SELECT pid_namespace FROM process_namespaces WHERE pid IN (SELECT pid FROM processes WHERE name LIKE "%sql%");
+SELECT name,pid FROM processes WHERE pid IN (SELECT pid FROM process_namespaces WHERE pid_namespace=<namespace>);

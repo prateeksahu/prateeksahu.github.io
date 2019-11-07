@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style="" lang="en">
+<head>
+<style>
+table, th, td {
+  border: 1px solid white;
+}
+</style>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/modernizr.js"></script>
+
+  <title>Spark Research Lab @ The University of Texas at Austin</title>
+</head>
+
+<body>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet" type="text/css" />
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <title>Spark Research Lab @ The University of Texas at Austin</title>
+  <header class="header">
+    <div class="logo"><a href="https://spark.ece.utexas.edu">SPARK</a>
+    </div>
+    <nav>
+      <ul class="nav"> 
+        <li><a href="#">Home</a> </li> 
+        <li><a href="#syllabus">Syllabus</a> </li> 
+        <li><a href="#labs">Labs</a> </li> 
+        <li><a href="#readings">Readings</a> </li> 
+        <li><a href="#exams">Exams</a> </li> 
+      </ul>
+    </nav>
+  </header>
+  <section class="intro"> 
+    <div class="hero"> 
+      <h1>EE 382V - Enterprise Network Security</h1> <span>The goal of this course is to learn how to set up enterprise-scale systems to be resistant to attacks -- covering concepts from networking, operating systems, enterprise systems, data analysis, and malware (malicious software).</span>
+      <h2> Instructors: Antonio Espinoza, Mohit Tiwari </h2>
+      <h3> TAs: Prateek Sahu, Riley Wood </h3>
+      <h3> Classes: M/W 10:30am - 12 noon, EER 1.518 </h3>
+    </div> 
+    <div class="mouse"><span></span>
+    </div>
+  </section>
+  <main class="main-content"> 
+
+    <div class="container">
+      <section class="page syllabus">
+        <h1 id="syllabus" class="title">Syllabus</h1> <span style="text-align:center"> * The syllabus is subject to minor changes</span>
+        <h3> <b> Module 1: Basic Networking </b> </h3>
+          <p>TCP/IP, DNS, packet analysis and security tools.</p>
+        <h3> <b> Module 2: Operating Systems and Enterprise Systems </b> </h3>
+          <p>Linux containers, firewalls, Security-Enhanced Linux (SELinux), Kubernetes-based container orchestration, control- and data-plane (e.g., Istio- and Envoy), identity and secrets management, Open Policy Agent.</p>
+        <h3> <b> Module 3: Malware in web-services </b> </h3>
+          <p>"OWASP" attacks like SQL- and command-injection, analysis of Equifax and CapOne incidents, long-term threats ('advanced persistent threats').</p>
+        <h3> <b> Module 4: Data Analysis </b> </h3>
+          <p>Clustering, classification, and anomaly detection.</p>
+        <h3> <b> Module 5: Open Ended Project </b> </h3>
+          <p>Compete across teams to set up defense- and attacks, work on projects that extend Kubernetes with new security policies.</p>
+        <table style="width:100%">
+          <tr> <th style="text-align:center">Date</th> <th style="text-align:center">Topic</th> <th style="text-align:center">Slides</th> </tr>
+          <tr> <td> 08/28 </td> <td>Introduction to Networking</td> <td><a href=file/networking.pdf>networking.pdf</a></td> </tr>
+          <tr> <td> 09/02 </td> <td>Tools, IP, TCP Packets</td> <td></td> </tr>
+          <tr> <td> 09/04 </td> <td>TCP Headers, CIDR, Handshake</td> <td></td> </tr>
+          <tr> <td> 09/09 </td> <td>Internet, OSI Stack</td> <td></td> </tr>
+          <tr> <td> 09/11 </td> <td>Encryption (AES), Side Channels</td> <td></td> </tr>
+          <tr> <td> 09/16 </td> <td>OS Basics, Containization</td> <td><a href=file/osbasics.pdf>osbasics.pdf</a></td> </tr>
+          <tr> <td> 09/18 </td> <td>Kubernetes Orchestration and Networking</td> <td><a href=file/orch.pdf>orchestration.pdf</a></td> </tr>
+          <tr> <td> 09/23 </td> <td>Sysdig</td> <td><a href=file/sysdig-lecture.pdf>sysdig.pdf</a></td> </tr>
+          <tr> <td> 09/25 </td> <td>Prometheus/OSQuery</td> <td><a href=file/prometheus.pdf>prometheus.pdf</a>,<a href=file/prometheus-cmd.txt>prom-cmds</a>,<a href=file/osquery.pdf>osquery.pdf</a>,<a href=file/osquery_cmd.txt>osquery-cmds</a></td> </tr>
+          <tr> <td> 09/30 </td> <td>Anchore/Secrets</td> <td><a href=file/anchore.pdf>anchore.pdf</a></td> </tr>
+          <tr> <td> 10/02 </td> <td>Fuzzing</td> <td></td> </tr>
+          <tr> <td> 10/07 </td> <td>Fuzzing/APT</td> <td></td> </tr>
+          <tr> <td> 10/09 </td> <td>APT</td> <td></td> </tr>
+          <tr> <td> 10/14 </td> <td>Exam Review</td> <td></td> </tr>
+          <tr> <td> 10/16 </td> <td>Midterm</td> <td></td> </tr>
+          <tr> <td> 10/21 </td> <td>ML: Trees/Random Forests</td> <td></td> </tr>
+          <tr> <td> 10/23 </td> <td>ML: supervised</td> <td></td> </tr>
+          <tr> <td> 10/28 </td> <td>ML: supervised demo</td> <td></td> </tr>
+          <tr> <td> 10/30 </td> <td>ML: unsupervised</td> <td></td> </tr>
+          <tr> <td> 11/04 </td> <td>ML: unsupervised learning demo</td> <td></td> </tr>
+          <tr> <td> 11/06 </td> <td>Network: Great Cannon</td> <td>Discussion 1 due [<a href=file/cannon.pdf>great_cannon.pdf</a>]</td> </tr>
+          <tr> <td> 11/11 </td> <td>Network: Great Cannon</td> <td></td> </tr>
+          <tr> <td> 11/13 </td> <td>ML: Nazca</td> <td>Discussion 2 due [<a href=file/nazca.pdf>nazca.pdf</a>]</td> </tr>
+          <tr> <td> 11/18 </td> <td>ML: Nazca</td> <td></td> </tr>
+          <tr> <td> 11/20 </td> <td>SideChannel: ContainerLeaks</td> <td>Discussion 3 due [<a href=file/container.pdf>container.pdf</a>]</td> </tr>
+          <tr> <td> 11/25 </td> <td>SideChannel: ContainerLeaks</td> <td></td> </tr>
+          <tr> <td> 11/27 </td> <td>Thanksgiving Break</td> <td></td> </tr>
+          <tr> <td> 12/02 </td> <td>OS/Arch: EROS</td> <td>Discussion 4 Due [<a href=file/eros.pdf>eros.pdf</a>]</td> </tr>
+          <tr> <td> 12/04 </td> <td>OS/Arch: EROS</td> <td></td> </tr>
+          <tr> <td> 12/09 </td> <td>Project</td> <td></td> </tr>
+          <tr> <td> 11/11 </td> <td>Project</td> <td></td> </tr>
+          <tr> <td> 12/16 </td> <td>Finals</td> <td></td> </tr>
+      </table>
+      </section>
+      <section class="page labs">
+        <h1 id="labs" class="title">Labs</h1>
+        <h3> <b> Lab 1: Networking (Due: 09/14/2019 11:59 pm)</b> </h3>
+        <p> Submit a pdf report and associated source code as a archive on Canvas while answering all questions asked in <a href=file/lab1.pdf>Lab1.pdf</a>. You will learn about packet sniffing, analysing TCP dumps and iptables. The blacklist file and python code are available <a href=file/lab1_files.zip>here</a>.</p>
+        <h3> <b> Lab 2a: Operating Systems and Enterprise Systems (Part a Due: 09/25 11:59 pm)</b> </h3>
+          <p> Submit a pdf report and associated source code as a archive on Canvas while answering all questions asked in <a href=file/lab2.pdf>Lab2.pdf</a> Part 1 and Part 2. You will learn about containerizing applications, various website and DB based attacks and basics of SELinux.</p>
+        <h3> <b> Lab 2b: Operating Systems and Enterprise Systems (Part b Due: 10/05 11:59 pm)</b> </h3>
+          <p> Submit a pdf report and associated source code as a archive on Canvas while answering all questions asked in <a href=file/lab2.pdf>Lab2.pdf</a> Part 3 (a&b). You will learn about kubernetes orchestration across multiple containers.</p>
+        <h3> <b> Lab 3: Advanced Persistent Threats, Fuzzing and Exploitation (Due: 10/26 11:59 pm)</b> </h3>
+          <p> Submit a pdf report and associated source code as a archive on Canvas while answering all questions asked in <a href=file/lab3.pdf>Lab3.pdf</a>. You will learn about fuzzing techniques and understand various APT reports. You are required to use 2 VMs.</p>
+        <h3> <b> Lab 4: Machine Learning techniques (Due: 11/12 11:59 pm)</b> </h3>
+          <p> Submit a pdf report and associated source code as a archive on Canvas while answering all questions asked in <a href=file/lab4.pdf>Lab4.pdf</a>. You will learn about application of supervised and un-supervised ML for classification and anomaly detection.</p>
+        <h3> <b> Lab 5: Open Ended Project (Due: 12/15 11:59 pm)</b> </h3>
+          <p> Choose a project from the given list of projects and implement it for the class project. You are free to come up with your own ideas, but refer with the instructors by 11/15 to validate your project. Make sure your project has the same level of details as described in other projects. The jupyter notebook files are available at <a href=file/lab4-notebooks_data.tar>notebook.tar</a></p>
+      </section>
+
+      <section class="page readings">
+        <h1 id="readings" class="title">Readings</h1>
+        <p> Please try to answer the following questions while submitting the report/summary for the reading materials. <br>
+        - Paper summary: What problem does the paper describe? Key insight? Results? <br>
+        - The problem that is being solved here: why does it exist? Is it fundamental or artifactual? <br>
+        - Did you find the evaluation satisfactory? How would you evaluate the same idea? <br>
+        - How would you extend this work? <br>
+        - What did you find most interesting about the paper? (some insight, the evaluation setup, or a tool that you could re-use). </p>
+        <ul>
+          <li>
+		        <h2 style="text-align:left">Reading 1: APTs and Networking (Due 11/06 10:30 am)</h2>
+            <a name="cyclone" href="https://www.usenix.org/system/files/conference/foci15/foci15-paper-marczak.pdf"><strong>An Analysis of China’s “Great Cannon”</strong></a>
+          <br>
+		        <h2 style="text-align:left">Reading 2: Machine Learning (Due 11/13 10:30 am)</h2>
+            <a name="cyclone" href="https://sites.cs.ucsb.edu/~vigna/publications/2014_NDSS_Nazca.pdf"><strong>Nazca: Detecting Malware Distribution in Large-Scale Networks </strong></a>
+          <br>
+		        <h2 style="text-align:left">Reading 3: Side Channel Attacks (Due 11/30 10:30 am)</h2>
+            <a name="cyclone" href="http://www.cs.memphis.edu/~xgao1/paper/dsn17_1.pdf"><strong>ContainerLeaks: Emerging Security Threats of Information Leakages in Container Clouds</strong></a>
+          <br>
+		        <h2 style="text-align:left">Reading 4: OS and Architecture (Due 12/02 10:30 am)</h2>
+            <a name="cyclone" href="https://sites.cs.ucsb.edu/~chris/teaching/cs290/doc/eros-sosp99.pdf"><strong>EROS: a fast capability system</strong></a>
+          <br>
+          </li>
+        </ul>
+      </section>
+
+      <section class="page exams">
+          <h1 id="exams" class="title">Exams</h1>
+          <h3> Midterm - 10/16 </h3>
+          <h4> Written Exam - EER 1.518 10:30am - 11:15am, Coding Exam - CPE 2.212 6pm - 9pm </h4>
+          <h5> [<a href=file/study_guide.pdf>Study_Guide.pdf</a>]</h5>
+          <h5> [<a href=file/midterm.pdf>Midterm_Written.pdf</a>][<a href=file/midterm_solutions.pdf>Written_solution.pdf</a>] </h5>
+          <h5> [<a href=file/midterm_code.pdf>Midterm_Coding.pdf</a>,<a href=file/midterm_code.zip>code_files.zip</a>][<a href=file/midterm_code_solutions.pdf>Coding_solution.pdf</a>] </h5>
+          <h3> Finals - 12/16 </h3>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
