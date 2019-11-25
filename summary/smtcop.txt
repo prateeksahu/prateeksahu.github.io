@@ -1,0 +1,32 @@
+About:
+Hardware enhancement to avoid SMT resource contention side channel leakage.
+8% overhead on 2-threaded mixes.
+Instruction Scheduling logic to support spacial and temporal partitioning.
+- Temporal: multiplexes resource between threads over one or multiple cycle period.
+- Spacial: statically allocates instances of a particular resource class to specific threads.
+
+Arch:
+Needs change to scheduler to allocate incoming ready instructions to various ports which might be temporally and spacially partitioned with respect to the functional units.
+i.e. a Port[i] can have spacial partition over FU[m] (single cycle) making Port[i] alternate over threads 0,1 every cycle, while it being temporally partitioned over FU[n] (multi cycle) making Port[i] allocate to each thread every t cycles only. So on a particular cycle, the Port[i] can be available to one thread for certain FU while not for others.
+
+Not convinced of the need of Issue Gap policy. We need issue gap to make sure that we do not schedule multi cycle instruction out of place (i.e. it will not complete by the end of the given time slice), but what is the need to have temporal slice greater than the execution latency of the FU? (or does it mean that the issue gap/time slice is max(FU[i] latency), and there can be some FU[j] whose time slice < issue gap (in the example)).
+
+Contention Driven Partitioning: Set counter (10k) when FU/Port is used and then decrement every cycle not used. Do not employ SMT-COP if counter is 0. Else do partitioning. [If attacker knows of the limit (10K) then they can leverage to just avoid detection and carry out 1 bit leak per 10k cycles i.e. ~3Mb/s leakage on modern 3GHz processors.]
+Measurement Driven Partitioning: Only some threads use rdtsc often and it is required by attacker. So managing this has least overhead with the above security guarentees. [Benign use of rdtsc (used by OS syscalls frequently and other monitoring tools in production environments or by programs like top/htop). It would mean that processor is partitioned the entire time.]
+Application Driven Partitioning: Set SMT-COP around sensitive code given by application using extra instructions.
+
+Impl:
+Partition Scoreboard - tracks availability of resource relative to thread context
+pbdg and preq - allows application to set requested cycle counter and lets OS manage budgeted partitioning based on the requested values. (unclear)
+Detailed integration of SMT COP into a scheduler design.
+
+Eval:
+M-Sim SMT simulator (https://www.cs.binghamton.edu/~msim/)
+Experiments on DEC-Alpha ISA
+Addition of SMT-COP Scoreboard near ports
+** Issue gap is 1 more the max(FU[i] latency) -- to prevent first cycle of the allocation period to become synchronized with the temporal partitioning policy of the port and thus permanently denying access to one of the threads.
+Shows security evaluation using synthetic covert channel and how partitioning helped in constant time latency.
+** No info of the frequency of cc, why is with partitioning slightly lower than peaks of with partitioning? (lower context switches?)
+4% IPC overhead for int, 10% for floating point and mix wl (8% overall) on over 24 SPEC 2006 apps.
+69% and 62% of SMT retention using SMT-COP (over single threaded run).
+CDP -- 94% of baseline IPC, 82% of retention.
