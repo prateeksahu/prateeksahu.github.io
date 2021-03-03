@@ -45,7 +45,7 @@ table, th, td {
   <section class="intro"> 
     <div class="hero"> 
       <h1>EE 382V - Enterprise Network Security</h1> <span>The goal of this course is to learn how to set up enterprise-scale systems to be resistant to attacks -- covering concepts from networking, operating systems, enterprise systems, data analysis, and malware (malicious software).</span>
-      <h2> Instructors: <a href=https://www.cs.unm.edu/~amajest/>Antonio Espinoza</a>, <a href=http://users.ece.utexas.edu/~tiwari/>Mohit Tiwari</a> </h2>
+      <h3> Instructors: <a href=https://www.cs.unm.edu/~amajest/>Antonio Espinoza</a>, <a href=http://users.ece.utexas.edu/~tiwari/>Mohit Tiwari</a> </h2>
       <h3> TAs: Prateek Sahu, Riley Wood </h3>
       <h3> Classes: M/W 10:30am - 12 noon, EER 1.518 </h3>
     </div> 
@@ -69,34 +69,34 @@ table, th, td {
           <p> Choose a project around open-source kubernetes hardening from the list of given projects and submit a production grade implementation using best practices from the industry.</p>
         <table style="width:100%">
           <tr> <th style="text-align:center">Date</th> <th style="text-align:center">Topic</th> <th style="text-align:center">Slides/Materials</th> </tr>
-          <tr> <td> 08/28 </td> <td>Introduction to Networking</td> <td><a href=file/syllabus.pdf>syllabus.pdf</a></td> </tr>
+          <tr> <td> 08/28 </td> <td>Introduction to networking</td> <td><a href=file/syllabus.pdf>syllabus.pdf</a></td> </tr>
           <tr> <td> 09/02 </td> <td>Labor Day</td> <td></td> </tr>
           <tr> <td> 09/04 </td> <td>Tools, TCP/IP, CIDR, Handshake</td> <td><a href=file/networking.pdf>networking.pdf</a></td> </tr>
-          <tr> <td> 09/09 </td> <td>Internet, OSI Stack</td> <td></td> </tr>
-	  <tr> <td> 09/11 </td> <td>Encryption (AES), Side Channels</td> <td><a href=file/policies-encrypt-hash.pdf>encryption_reading.pdf</a>, <a href=file/hmac_md5.c>hmac_md5.c</a>, <a href=file/RSAintro.py>RSA.py</a></td> </tr>
-          <tr> <td> 09/16 </td> <td>OS Basics, Containization</td> <td><a href=file/osbasics.pdf>osbasics.pdf</a>, <a href=file/container_demo.zip>containerBox_demo.zip</a>, <a href=file/strace.zip>strace_demo.zip</a></td> </tr>
-          <tr> <td> 09/18 </td> <td>Kubernetes Orchestration and Networking</td> <td><a href=file/orch.pdf>orchestration.pdf</a>, <a href=file/kubernetes_demo.zip>tutum_demo.zip</a></td> </tr>
+          <tr> <td> 09/09 </td> <td>Internet, OSI stack</td> <td></td> </tr>
+	  <tr> <td> 09/11 </td> <td>Encryption (AES), Side channels</td> <td><a href=file/policies-encrypt-hash.pdf>encryption.pdf</a>, <a href=file/hmac_md5.c>hmac_md5.c</a>, <a href=file/RSAintro.py>RSA.py</a></td> </tr>
+          <tr> <td> 09/16 </td> <td>OS Basics, Containers</td> <td><a href=file/osbasics.pdf>osbasics.pdf</a>, <a href=file/container_demo.zip>containerBox_demo.zip</a>, <a href=file/strace.zip>strace_demo.zip</a></td> </tr>
+          <tr> <td> 09/18 </td> <td>Kubernetes orchestration and networking</td> <td><a href=file/orch.pdf>orchestration.pdf</a>, <a href=file/kubernetes_demo.zip>tutum_demo.zip</a></td> </tr>
           <tr> <td> 09/23 </td> <td>Sysdig</td> <td><a href=file/sysdig-lecture.pdf>sysdig.pdf</a></td> </tr>
           <tr> <td> 09/25 </td> <td>Prometheus/OSQuery</td> <td><a href=file/prometheus.pdf>prometheus.pdf</a>, <a href=file/prometheus-cmd.txt>prom-cmds</a>, <a href=file/osquery.pdf>osquery.pdf</a>, <a href=file/osquery_cmd.txt>osquery-cmds</a></td> </tr>
           <tr> <td> 09/30 </td> <td>Anchore/Secrets</td> <td><a href=file/anchore.pdf>anchore.pdf</a></td> </tr>
-          <tr> <td> 10/02 </td> <td>Fuzzing</td> <td><a href=file/Intro_Fuzzing_Exploitation.pdf>Intro to Fuzzing and Exploitation.pdf</a></td> </tr>
-          <tr> <td> 10/07 </td> <td>Fuzzing/APT</td> <td><a href=file/Cyber_Threats_Modern_Enterprise.pdf>Cyber Threats in Modern Enterprise.pdf</a></td> </tr>
+          <tr> <td> 10/02 </td> <td>Fuzzing</td> <td><a href=file/Intro_Fuzzing_Exploitation.pdf>intro_to_fuzzing_and_exploitation.pdf</a></td> </tr>
+          <tr> <td> 10/07 </td> <td>Fuzzing/APT</td> <td><a href=file/Cyber_Threats_Modern_Enterprise.pdf>cyber_threats_in_modern_enterprise.pdf</a></td> </tr>
           <tr> <td> 10/09 </td> <td>APT</td> <td><a href=file/rpt-apt38.pdf>APT-38.pdf</a></td> </tr>
-          <tr> <td> 10/14 </td> <td>Exam Review</td> <td></td> </tr>
+          <tr> <td> 10/14 </td> <td>Exam review</td> <td></td> </tr>
           <tr> <td> 10/16 </td> <td>Midterm</td> <td><a href="#exams">midterm</a></td> </tr>
-          <tr> <td> 10/21 </td> <td>Classification, Trees and Random Forests</td> <td><a href=file/ML_for_Enterprise_Cybersecurity.pdf>ML for Enterprise Cybersecurity.pdf</a></td> </tr>
-          <tr> <td> 10/23 </td> <td>Supervised Learning</td> <td></td> </tr>
-          <tr> <td> 10/28 </td> <td>Supervised Learning/Demo</td> <td><a href=file/demos_update.zip>ML_Demos.zip</a></td> </tr>
+          <tr> <td> 10/21 </td> <td>Classification, trees and random forests</td> <td><a href=file/ML_for_Enterprise_Cybersecurity.pdf>ml_for_enterprise_cybersecurity.pdf</a></td> </tr>
+          <tr> <td> 10/23 </td> <td>Supervised learning</td> <td></td> </tr>
+          <tr> <td> 10/28 </td> <td>Supervised learning/Demo</td> <td><a href=file/demos_update.zip>ml_demos.zip</a></td> </tr>
           <tr> <td> 10/30 </td> <td>Pitfalls of supervised learning</td> <td></td> </tr>
-          <tr> <td> 11/04 </td> <td>Clustering and Intrusion Detection</td> <td>*Above Demos archive is updated</td> </tr>
+          <tr> <td> 11/04 </td> <td>Clustering and intrusion detection</td> <td>*Above Demos archive is updated</td> </tr>
           <tr> <td> 11/06 </td> <td>Network: Great Cannon</td> <td>Discussion 1 due [<a href=file/cannon.pdf>great_cannon.pdf</a>]</td> </tr>
           <tr> <td> 11/11 </td> <td>Network: Great Cannon</td> <td></td> </tr>
           <tr> <td> 11/13 </td> <td>ML: Nazca</td> <td>Discussion 2 due [<a href=file/nazca.pdf>nazca.pdf</a>]</td> </tr>
           <tr> <td> 11/18 </td> <td>ML: Nazca</td> <td></td> </tr>
-          <tr> <td> 11/20 </td> <td>SideChannel: ContainerLeaks</td> <td>Discussion 3 due [<a href=file/container.pdf>container.pdf</a>]</td> </tr>
-          <tr> <td> 11/25 </td> <td>SideChannel: ContainerLeaks</td> <td></td> </tr>
+          <tr> <td> 11/20 </td> <td>Side-channel: ContainerLeaks</td> <td>Discussion 3 due [<a href=file/container.pdf>container.pdf</a>]</td> </tr>
+          <tr> <td> 11/25 </td> <td>Side-channel: ContainerLeaks</td> <td></td> </tr>
           <tr> <td> 11/27 </td> <td>Thanksgiving Break</td> <td></td> </tr>
-          <tr> <td> 12/02 </td> <td>OS/Arch: EROS</td> <td>Discussion 4 Due [<a href=file/eros.pdf>eros.pdf</a>]</td> </tr>
+          <tr> <td> 12/02 </td> <td>OS/Arch: EROS</td> <td>Discussion 4 due [<a href=file/eros.pdf>eros.pdf</a>]</td> </tr>
           <tr> <td> 12/04 </td> <td>OS/Arch: EROS</td> <td></td> </tr>
           <tr> <td> 12/09 </td> <td>Project</td> <td></td> </tr>
           <tr> <td> 11/11 </td> <td>Project</td> <td></td> </tr>
@@ -141,33 +141,32 @@ table, th, td {
         - What did you find most interesting about the paper? (some insight, the evaluation setup, or a tool that you could re-use). </p>
         <ul>
           <li>
-		        <h2 style="text-align:left">Reading 1: APTs and Networking (Due 11/06 10:30 am)</h2>
-            <a name="greatcannon" href="https://www.usenix.org/system/files/conference/foci15/foci15-paper-marczak.pdf"><strong>An Analysis of China’s “Great Cannon”</strong></a> [<a href=file/greatCannon.pdf style="color:#f2be1f"> review.pdf </a>]
-          <br>
-		        <h2 style="text-align:left">Reading 2: Machine Learning (Due 11/13 10:30 am)</h2>
-            <a name="nazca" href="https://sites.cs.ucsb.edu/~vigna/publications/2014_NDSS_Nazca.pdf"><strong>Nazca: Detecting Malware Distribution in Large-Scale Networks </strong></a> [<a href=file/nazca.pdf style="color:#f2be1f"> review.pdf </a>]<br>
-            <a name="closed-world" href="https://personal.utdallas.edu/~muratk/courses/dmsec_files/oakland10-ml.pdf"><strong>Outside the Closed World: On Using Machine Learning For Network Intrusion Detection</strong></a>
-          <br>
-		        <h2 style="text-align:left">Reading 3: Side Channel Attacks (Due 11/20 10:30 am)</h2>
-            <a name="cyclone" href="http://www.cs.memphis.edu/~xgao1/paper/dsn17_1.pdf"><strong>ContainerLeaks: Emerging Security Threats of Information Leakages in Container Clouds</strong></a> [<a href=file/container_leaks.pdf style="color:#f2be1f"> review.pdf </a>]
-          <br>
-		        <h2 style="text-align:left">Reading 4: OS and Architecture (Due 12/02 10:30 am)</h2>
-            <a name="eros" href="https://sites.cs.ucsb.edu/~chris/teaching/cs290/doc/eros-sosp99.pdf"><strong>EROS: a fast capability system</strong></a>
-          <br>
+            <h3 style="text-align:left"> <b> Reading 1: APTs and Networking (Due 11/06 10:30 am) </b> </h2>
+            <p> <a name="greatcannon" href="https://www.usenix.org/system/files/conference/foci15/foci15-paper-marczak.pdf">An Analysis of China’s “Great Cannon”</a> [<a href=file/greatCannon.pdf style="color:#f2be1f"> review.pdf </a>] </p>
+          <h3 style="text-align:left"> <b> Reading 2: Machine Learning (Due 11/13 10:30 am) </b> </h2>
+          <p> <a name="nazca" href="https://sites.cs.ucsb.edu/~vigna/publications/2014_NDSS_Nazca.pdf">Nazca: Detecting Malware Distribution in Large-Scale Networks </a> [<a href=file/nazca.pdf style="color:#f2be1f"> review.pdf </a>]<br>
+            <a name="closed-world" href="https://personal.utdallas.edu/~muratk/courses/dmsec_files/oakland10-ml.pdf">Outside the Closed World: On Using Machine Learning For Network Intrusion Detection</a>
+          </p>
+          <h3 style="text-align:left"> <b> Reading 3: Side Channel Attacks (Due 11/20 10:30 am) </b> </h2>
+          <p> <a name="cyclone" href="http://www.cs.memphis.edu/~xgao1/paper/dsn17_1.pdf">ContainerLeaks: Emerging Security Threats of Information Leakages in Container Clouds</a> [<a href=file/container_leaks.pdf style="color:#f2be1f"> review.pdf </a>]
+          </p>
+          <h3 style="text-align:left"> <b> Reading 4: OS and Architecture (Due 12/02 10:30 am) </b> </h2>
+          <p> <a name="eros" href="https://sites.cs.ucsb.edu/~chris/teaching/cs290/doc/eros-sosp99.pdf">EROS: a fast capability system</a> [<a href=file/eros.pdf style="color:#f2be1f"> review.pdf </a>]
+          </p>
           </li>
         </ul>
       </section>
 
       <section class="page exams">
           <h1 id="exams" class="title">Exams</h1>
-          <h3> Midterm - 10/16 </h3>
-          <h4> Written Exam - EER 1.518 10:30am - 11:15am, Coding Exam - CPE 2.212 6pm - 9pm </h4>
-          <h5> [<a href=file/study_guide.pdf>Study_Guide.pdf</a>]</h5>
-          <h5> [<a href=file/midterm.pdf>Midterm_Written.pdf</a>][<a href=file/midterm_solutions.pdf>Written_solution.pdf</a>] </h5>
-          <h5> [<a href=file/midterm_code.pdf>Midterm_Coding.pdf</a>,<a href=file/midterm_code.zip>code_files.zip</a>][<a href=file/midterm_code_solutions.pdf>Coding_solution.pdf</a>] </h5>
-          <h3> Finals - 12/16 </h3>
-          <h4> Lightning talk and Poster Presentation - EER 1.518 2pm - 5pm </h4>
-          <h5> Each team will be given 2 minutes to present the idea and the result at a very high level. Teams should aim at preparing 2-3 slides of content with key idea and results. After all teams have given the talks, teams will spread out in the room with poster (or 1 slide screen on laptop) and wait for instructors to come to you when you will explain your project in depth. Instructors will typically spend 5-7 minutes at each booth. All presentations needs to be uploaded onto Canvas by 1 pm on Dec 16th. </h5>
+          <h3> <b> Midterm - 10/16 </b> </h3>
+          <p>Written Exam - EER 1.518 10:30am - 11:15am, Coding Exam - CPE 2.212 6pm - 9pm </p>
+          [<a href=file/study_guide.pdf>Study_Guide.pdf</a>]
+          [<a href=file/midterm.pdf>Midterm_Written.pdf</a>][<a href=file/midterm_solutions.pdf>Written_solution.pdf</a>]
+          [<a href=file/midterm_code.pdf>Midterm_Coding.pdf</a>,<a href=file/midterm_code.zip>code_files.zip</a>][<a href=file/midterm_code_solutions.pdf>Coding_solution.pdf</a>]
+          <h3><b> Finals - 12/16 </b></h3>
+          <p> Lightning talk and Poster Presentation - EER 1.518 2pm - 5pm <br>
+          Each team will be given 2 minutes to present the idea and the result at a very high level. Teams should aim at preparing 2-3 slides of content with key idea and results. After all teams have given the talks, teams will spread out in the room with poster (or 1 slide screen on laptop) and wait for instructors to come to you when you will explain your project in depth. Instructors will typically spend 5-7 minutes at each booth. All presentations needs to be uploaded onto Canvas by 1 pm on Dec 16th. </p>
       </section>
     </div>
   </main>
