@@ -6,12 +6,12 @@
 body {
 	font-size: 100%;
 	font-family: "Source Sans Pro", sans-serif;
-	color: #F5F1E9;
-	background-color: #262626;
+	color: #000000;
+	background-color: #FFFFFF;
 }
 
 a {
-	color: white;
+	color: #404040;
 
 }
 
@@ -135,7 +135,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav a {
 	display: inline-block;
-	color: #F5F1E9;
+	color: #404040;
 	text-transform: uppercase;
 	font-weight: 700;
 }
@@ -155,7 +155,7 @@ h1, h2, h3, h4, h5, h6 {
 	position: relative;
 	font-family: "Montserrat", sans-serif;
 	height: 70%;
-	background-color: #F2A900;
+	background-color: #FFFFFF;
 	background-size: cover;
 	z-index: 1;
 	-webkit-font-smoothing: antialiased;
@@ -187,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .intro span{
-	color: white;
+	color: black;
 	font-size: 1em;
 	text-transform: uppercase;
 }
