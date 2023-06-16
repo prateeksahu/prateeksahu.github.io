@@ -1,0 +1,17 @@
+@inproceedings{10.1145/3445814.3446708,
+author = {Behnia, Mohammad and Sahu, Prateek and Paccagnella, Riccardo and Yu, Jiyong and Zhao, Zirui Neil and Zou, Xiang and Unterluggauer, Thomas and Torrellas, Josep and Rozas, Carlos and Morrison, Adam and Mckeen, Frank and Liu, Fangfei and Gabor, Ron and Fletcher, Christopher W. and Basak, Abhishek and Alameldeen, Alaa},
+title = {Speculative Interference Attacks: Breaking Invisible Speculation Schemes},
+year = {2021},
+isbn = {9781450383172},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3445814.3446708},
+doi = {10.1145/3445814.3446708},
+abstract = {Recent security vulnerabilities that target speculative execution (e.g., Spectre) present a significant challenge for processor design. These highly publicized vulnerabilities use speculative execution to learn victim secrets by changing the cache state. As a result, recent computer architecture research has focused on invisible speculation mechanisms that attempt to block changes in cache state due to speculative execution. Prior work has shown significant success in preventing Spectre and other attacks at modest performance costs. In this paper, we introduce speculative interference attacks, which show that prior invisible speculation mechanisms do not fully block speculation-based attacks that use cache state. We make two key observations. First, mis-speculated younger instructions can change the timing of older, bound-to-retire instructions, including memory operations. Second, changing the timing of a memory operation can change the order of that memory operation relative to other memory operations, resulting in persistent changes to the cache state. Using both of these observations, we demonstrate (among other attack variants) that secret information accessed by mis-speculated instructions can change the order of bound-to-retire loads. Load timing changes can therefore leave secret-dependent changes in the cache, even in the presence of invisible speculation mechanisms. We show that this problem is not easy to fix. Speculative interference converts timing changes to persistent cache-state changes, and timing is typically ignored by many cache-based defenses. We develop a framework to understand the attack and demonstrate concrete proof-of-concept attacks against invisible speculation mechanisms. We conclude with a discussion of security definitions that are sufficient to block the attacks, along with preliminary defense ideas based on those definitions.},
+booktitle = {Proceedings of the 26th ACM International Conference on Architectural Support for Programming Languages and Operating Systems},
+pages = {1046–1060},
+numpages = {15},
+keywords = {speculative execution attacks, microarchitectural covert channels, invisible speculation},
+location = {Virtual, USA},
+series = {ASPLOS '21}
+}
